@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css?family=Young+Serif');
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif");
+
+body {
+    background-color: #f9ede5;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5em;
+    line-height: 90px;
+    border-bottom: 3px solid black;
+    background-color: #f9ede5;
+    z-index: 1000;
+    margin: 0 auto;
+    justify-content: center;
+    
+    
+}
+
+#topmenu #ul-topmenu {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#ul-topmenu li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 2vw;
+}
+
+#ul-topmenu li img {
+    width: 3em;
+    height: auto;
+}
+#ul-topmenu li:first-child{
+    margin: 2% auto;
+}
+
+#myname {
+    font-family: 'Young Serif';
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1vw;
+    
+}
+
+.links{
+    margin: 0 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vw;
+    color: black;
+    text-decoration: none;
+	position: relative;
+	padding-bottom: 1em;
+}
+
+.links:hover{
+    transition: 300ms;
+    text-decoration: underline;
+    text-decoration-style: wavy ;
+    text-decoration-color: purple;
+}
+
+#home {
+    display: flex; /* Make the elements side by side */
+    flex-wrap: wrap; /* Allow them to wrap if necessary */
+    justify-content: center;
+    align-items: center; /* Center the content */
+
+}
+
+#bio {
+    margin-top: 10vh;
+    flex: 1; /* Allow it to take up available space */
+    max-width: 40%;/* Limit the width */
+    font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+   
+}
+
+#home-photo {
+    margin-top: 10rem;
+    max-width: 30%; /* Adjust as needed */
+    text-align: right; /* Align image to the right */
+    
+}
+
+#home-photo img {
+    max-width: 100%;/* Make sure the image doesn't exceed its container */
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+#home-photo img:hover{
+    cursor: pointer;
+    transition: 300ms;
+    scale: 0.97 0.97;
+
+}
+
+#hello {
+    font-size: 2.5vw;
+    font-weight: 300;
+    color: tomato;
+    /*text-decoration: 2px solid underline;*/
+    font-family: Young Serif;
+    margin-block: 20px;
+    height: 7vh;
+    margin-top: 5vw;
+}
+#dynamic-p{
+    height: 200px;
+}
+#typedText{
+    display: inline-block;
+    width: 8px; /* Adjust cursor width as needed */
+    background-color: black;
+    height: 0.5em;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+#home-contact{
+    margin-top: 7vh;
+}
+#home-contact img{
+    width: 2vw;
+    height: auto;
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+#h-con-p{
+    position: relative;
+    border: none;
+    color: deeppink;
+    transition: .4s ease-in;
+    z-index: 1;
+    max-width: 14vw;
+}
+
+#h-con-p::before,
+#h-con-p:after{
+    position: relative;
+    content: "";
+    z-index: -1;
+    
+}
+#h-con-p:hover{
+    box-shadow: inset 6.5em 0 0 0 turquoise;
+}
+#h-con-p:hover::after{
+    width: 100%;
+
+}
+
+#bio-p span:nth-child(3), span:nth-child(4){
+    background: linear-gradient( yellow, yellow)
+  /* Starting position of the gradient */
+  0
+  /* Position of the gradient along the y-axis */
+  110%
+  /* Size of the gradient along the x-axis (full width) */
+  / 100%
+  /* Size of the gradient along the y-axis (1rem height) */
+  0.7vw
+  /* Background will not repeat */
+  no-repeat;
+
+}
+
+#balaji {
+    color: purple;
+    font-size: 2em;
+    background-color: #f9ede5;
+}
+
+#svg1{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#aboutme1{
+    margin-top: 17vw;
+    position: absolute;
+    z-index: -1;
+}
+#aboutme1 h2{
+    padding: 5px;
+    margin-inline-start: 7.5vw;
+    font-size: 1.8vw;
+    font-family: IBM plex serif;
+    color: chocolate;
+    font-weight: bolder;
+    text-decoration: 2px solid underline;
+}
+
+#aboutme-p{
+    max-width: 85vw;
+    font-size: 1.4vw;
+    margin-inline-start: 8vw;
+    text-align: justify;
+    font-family: IBM Plex serif;
+    color: black;
+    font-weight: 500;
+}
+
+#aboutme-p span:first-child{
+    color: blueviolet;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#aboutme-p span:nth-child(2), span:nth-child(3), span:nth-child(4){
+    background: linear-gradient(yellow, yellow)
+  /* Starting position of the gradient */
+  0
+  /* Position of the gradient along the y-axis */
+  110%
+  /* Size of the gradient along the x-axis (full width) */
+  / 100%
+  /* Size of the gradient along the y-axis (1rem height) */
+  0.9vw
+  /* Background will not repeat */
+  no-repeat;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+#aboutme-p span:nth-child(7), span:nth-child(6){
+    color: red;
+}
+
+#aboutme-p a{
+    text-decoration: none;
+    color: fuchsia;
+    &:hover{
+        text-decoration: black 1px underline wavy;
+    }
+}
+
+#skills{
+    margin-block-start: 59vw;
+    position: absolute;
+    z-index: -1;
+    margin-inline-start: 26vw;
+    margin-inline-end: 20vw;
+}
+#skills h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image-container {
+    margin: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.text-overlay {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text-overlay h3{
+    font-size: 1.5vw;
+}
+#skills img{
+  width: 12vw;
+  height: 12vw;
+  border: none;
+  transition: .3s ease-in;
+  z-index: 1;
+}
+
+#skills img:hover{
+    scale: 1.1;
+}
+
+#projects{
+    margin-block-start: 110vw;
+    position: absolute;
+    z-index: -1;
+    margin-inline-start: 10vw;
+    margin-inline-end: 10vw;
+
+}
+
+#projects h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vw;
+}
+
+#project1{
+    margin-inline-start: 8vw;
+    margin-inline-end: 8vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    
+    border:black solid 2px;
+    margin-bottom: 2vw;
+    position: relative;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+#project1::before,
+#project1::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+#project1:hover{
+    box-shadow: 0.5vw 0.5vw 0px black;
+    top: -3px;
+    left: -3px;
+}
+
+#project1 p{
+    margin-top:  0px;
+    font-family: IBM Plex serif;
+    color: rgb(2, 117, 27);
+    
+}
+
+#project1 h4{
+    font-family: IBM Plex Serif;
+    color: blueviolet;
+}
+
+#project1 h3{
+    font-family: Young Serif;
+    font-weight: 500;
+    color: tomato;
+}
+
+footer{
+    margin-block-start: 190vw;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#footer-svgs{
+    width: 2vw;
+    height: auto;
+    justify-content: center;
+    margin-right: 1vw;
+}
+#contact-lefts{
+    max-width: 50%;
+}
+
+#contact-rights{
+    max-width: 50%;
+    
+}
+#footer-sec{
+    display: flex;
+}
+form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+}
+form input, button, textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(12, 12, 12, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: rgb(22, 25, 56);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#footer-sec{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(22, 25, 56);
+    color: white;
+}
+
+#footer-sec p{
+    text-align: justify;
+    font-family: DM serif Display;
+    
+}
+
+#footer-contact, #footer-sec h3{
+    display: flex;
+    justify-content: center;
+    font-family: IBM Plex Serif;
+}
+
+form button{
+    padding: 15px;
+    background-color: tomato;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.1vw;
+    font-family: IBM Plex Serif;
+    font-weight: bolder;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    &:active{
+        scale: 1.1;
+    }
+    &:hover{
+        background-color: rgb(22, 25, 56);
+        border-color: tomato;
+        border: 2px solid;
+        color: tomato;
+    }
+}
+
+#submit-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#contact-rights{
+    margin-top: 5vw;
+}
+
+#contact-rights input, textarea{
+    border-radius: 10px;
+}
+
+#iconbutton{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+#iconbutton img{
+    max-width: 50px;
+    clip-path: circle(50%);
+}
+
+@media screen and (max-width: 480px) {
+    #home-photo img {
+        max-width: 100%; /* Adjust image size */
+    }
+
+    #bio {
+        margin-top: 4vw;
+        font-size: 14px; /* Adjust font size for readability */
+    }
+    
+    #hello{
+        margin-top: 15vw;
+        font-size: 4vw;
+        margin-bottom: 0px;
+    }
+    .links{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 2vw;
+    }
+
+    #ul-topmenu img{
+        display: none;
+    }
+
+    #myname{
+        margin-top: 1vw;
+        font-size: 2vw;
+    }
+
+    #bio-p-span3, #bio-p-span4{
+        background: linear-gradient( yellow, yellow)
+      /* Starting position of the gradient */
+      0
+      /* Position of the gradient along the y-axis */
+      110%
+      /* Size of the gradient along the x-axis (full width) */
+      / 100%
+      /* Size of the gradient along the y-axis (1rem height) */
+      0.7vw
+      /* Background will not repeat */
+      no-repeat;
+      font-size: 10px;
+    }
+
+    #home-contact img{
+        width: 20px;
+    }
+
+    #contact-lefts{
+        font-size: 1.8vw;
+        
+    }
+
+    #contact-rights{
+        margin-left: 3vw;
+    }
+
+    #footer-svgs{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    nav{
+        margin-top: -20px;
+        margin-bottom: -200px;
+    }
+
+    #submit-btn button{
+        font-size: 3vw;
+    }
+
+    .modal-content {
+        margin: 30% auto;
+    }
+
+    #project1 h3{
+        font-size: 3vw;
+    }
+
+    #project1 h4{
+        font-size: 2vw;
+    }
+
+    #project1 p{
+        font-size: 2vw;
+    }
+
+    #projects-heading h2{
+        margin-top: 15vw;
+        font-size: 3.5vw;
+    }
+
+    #skills h2{
+        font-size: 3.5vw;
+    }
+    
+    #balaji{
+        font-size: 4.3vw;
+    }
+}
