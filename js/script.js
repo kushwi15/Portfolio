@@ -94,9 +94,9 @@ const nav = document.querySelector(".nav"),
             // Create an anchor element
             var downloadLink = document.createElement("a");
             // Set the href attribute to the path of your CV file
-            downloadLink.href = "Kushwinth Kumar Resume.html";
+            downloadLink.href = "Kushwinth Kumar Resume.pdf";
             // Set the download attribute to force download
-            downloadLink.download = "Kushwinth Kumar Resume.html";
+            downloadLink.download = "Kushwinth Kumar Resume.pdf";
             // Append the anchor element to the document body
             document.body.appendChild(downloadLink);
             // Trigger a click event on the anchor element
